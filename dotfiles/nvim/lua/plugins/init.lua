@@ -22,7 +22,8 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- Simple plugins can be specified as strings
-  use 'neoclide/coc.nvim'
+--  use 'neoclide/coc.nvim'
+  use 'ms-jpq/coq_nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'gruvbox-community/gruvbox'
   use 'neovim/nvim-lspconfig'
