@@ -23,3 +23,18 @@ map('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
 -- file tree!
 map('n', '<leader>pv', ':wincmd v<bar> :Ex <bar> :vertical resize 30<CR>')
 
+
+-- map ctrl+space to auto complete
+-- api.nvim_exec([[ 
+-- inoremap <silent><expr> <c-space> coc#refresh()
+-- ]], false)
+
+--harpoon!
+map('n', '<leader>hh', '<cmd>lua require("harpoon.mark").add_file()<cr>')
+map('n', '<leader>oo', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>')
+map('n', '<leader>oa', '<cmd>lua require("harpoon.ui").nav_file(1)<cr>')
+map('n', '<leader>os', '<cmd>lua require("harpoon.ui").nav_file(2)<cr>')
+map('n', '<leader>od', '<cmd>lua require("harpoon.ui").nav_file(3)<cr>')
+map('n', '<leader>of', '<cmd>lua require("harpoon.ui").nav_file(4)<cr>')
+
+
