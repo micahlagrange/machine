@@ -21,15 +21,25 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use { 'wbthomason/packer.nvim' }
 
+  -- _-=X( LSP )X=-_ --
+  use { 'neovim/nvim-lspconfig' }
+  -- Auto completion
+  use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'hrsh7th/cmp-buffer' }
+  use { 'hrsh7th/cmp-path' }
+  use { 'hrsh7th/nvim-cmp' }
+  use { 'L3MON4D3/LuaSnip' }
+  use { 'saadparwaiz1/cmp_luasnip' }
   -- Simple plugins can be specified as strings
   use { 'nvim-telescope/telescope.nvim' }
-  use { 'neovim/nvim-lspconfig' }
-  use { 'hrsh7th/nvim-cmp' }
+  -- Syntax highlighting
   use { 'nvim-treesitter/nvim-treesitter' }
+  -- Utils
   use { 'mbbill/undotree' }
   use { 'tpope/vim-fugitive' }
   use { 'nvim-lua/plenary.nvim' }
   use { 'ThePrimeagen/harpoon' }
+  -- theme
   use { "ellisonleao/gruvbox.nvim" }
 
 end)
