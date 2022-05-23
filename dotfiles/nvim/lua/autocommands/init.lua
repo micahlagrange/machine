@@ -7,14 +7,6 @@ augroup packer_user_config
 augroup end
 ]], false)
 
-api.nvim_exec([[
-augroup ts_pretty
-  autocmd!
-  autocmd BufWritePre,InsertLeave *.ts CocCommand prettier.formatFile
-  autocmd BufWritePre,InsertLeave *.js CocCommand prettier.formatFile
-augroup end
-]], false)
-
 -- from the primeagen
 api.nvim_exec([[
 augroup highlight_yank

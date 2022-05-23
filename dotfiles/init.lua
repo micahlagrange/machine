@@ -1,3 +1,5 @@
 require('core')
 require('keymaps')
 require('plugins')
+require('autocommands')
+require('lsp')

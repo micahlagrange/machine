@@ -2,6 +2,7 @@ local o = vim.o
 local opt = vim.opt
 local wo = vim.wo
 local api = vim.api
+local g = vim.g
 
 -- Options
 o.exrc = true
@@ -13,9 +14,9 @@ o.hlsearch = false
 o.hidden = true
 o.errorbells = false
 
-o.tabstop = 4 
-o.softtabstop = 4
-o.shiftwidth = 4
+o.tabstop = 2 
+o.softtabstop = 2
+o.shiftwidth = 2
 o.expandtab = true
 o.smartindent = true
 
@@ -45,8 +46,10 @@ o.updatetime = 50
 -- Don't pass messages to |ins-completion-menu|
 opt.shortmess:append("c")
 
-api.nvim_command [[colorscheme gruvbox]]
 api.nvim_exec([[
     highlight Normal guibg=none
 ]], false)
+
+vim.opt.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 

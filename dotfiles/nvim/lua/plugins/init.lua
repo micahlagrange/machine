@@ -19,18 +19,18 @@ require("telescope").setup {
 -- we may someday find out this return is not needed. not today
 return require('packer').startup(function()
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+  use { 'wbthomason/packer.nvim' }
 
   -- Simple plugins can be specified as strings
-  use 'neoclide/coc.nvim'
-  use 'nvim-telescope/telescope.nvim'
-  use 'gruvbox-community/gruvbox'
-  use 'neovim/nvim-lspconfig'
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'mbbill/undotree'
-  use 'tpope/vim-fugitive'
-  use 'nvim-lua/plenary.nvim'
-  use 'ThePrimeagen/harpoon'
+  use { 'nvim-telescope/telescope.nvim' }
+  use { 'neovim/nvim-lspconfig' }
+  use { 'hrsh7th/nvim-cmp' }
+  use { 'nvim-treesitter/nvim-treesitter' }
+  use { 'mbbill/undotree' }
+  use { 'tpope/vim-fugitive' }
+  use { 'nvim-lua/plenary.nvim' }
+  use { 'ThePrimeagen/harpoon' }
+  use { "ellisonleao/gruvbox.nvim" }
 
 end)
 
