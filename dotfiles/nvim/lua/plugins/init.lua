@@ -1,13 +1,13 @@
+local use = require('packer').use
+local vimscript = vim.cmd
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
 -- do I? who knows
-vim.cmd [[packadd packer.nvim]]
+vimscript [[packadd packer.nvim]]
 
 require("telescope").setup {
-  defaults = {
-    -- ....
-  },
+  defaults = { },
   pickers = {
     find_files = {
       find_command = { "fd", "--type", "f", "--strip-cwd-prefix" }
