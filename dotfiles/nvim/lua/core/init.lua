@@ -24,7 +24,7 @@ o.wrap = false
 
 o.swapfile = false
 o.backup = false
-o.undodir = '/Users/micah/.vim/undodir'
+o.undodir = vim.fn.expand('~/.vim/undodir')
 o.undofile = true
 
 o.incsearch = true
