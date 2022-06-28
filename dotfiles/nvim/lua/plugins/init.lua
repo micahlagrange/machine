@@ -36,6 +36,7 @@ return require("packer").startup(function()
 	use({ "neovim/nvim-lspconfig" })
 	-- formatting
 	use({ "jose-elias-alvarez/null-ls.nvim" })
+
 	-- Auto completion
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-buffer" })
@@ -52,8 +53,12 @@ return require("packer").startup(function()
 	use({ "tpope/vim-fugitive" })
 	use({ "nvim-lua/plenary.nvim" })
 	use({ "ThePrimeagen/harpoon" })
+	use({ "ThePrimeagen/git-worktree.nvim" })
 	-- theme
 	use({ "ellisonleao/gruvbox.nvim" })
+
+	-- copilot
+	use({ "github/copilot.vim" })
 
 	--boostrapping
 	if packer_bootstrap then
